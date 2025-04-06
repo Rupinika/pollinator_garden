@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Haven - Pollinator Gardens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="forest-header">
+        <nav>
+            <div class="logo">Forest Haven</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#plants">Plants</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Forest Haven</h1>
+                <p>Discover the Magic of Pollinator-Friendly Gardens</p>
+                <a href="#plants" class="cta-button">Explore Our Plants</a>
+            </div>
+        </section>
+
+        <section id="plants" class="featured-plants">
+            <h2 class="section-title">Featured Pollinator Plants</h2>
+            
+            <!-- Filter System -->
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="bloom-time">Bloom Time:</label>
+                    <select id="bloom-time">
+                        <option value="all">All Seasons</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sun-requirements">Sun Requirements:</label>
+                    <select id="sun-requirements">
+                        <option value="all">All</option>
+                        <option value="full-sun">Full Sun</option>
+                        <option value="partial-shade">Partial Shade</option>
+                        <option value="shade">Shade</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="height">Height:</label>
+                    <select id="height">
+                        <option value="all">All Heights</option>
+                        <option value="short">Short (under 1ft)</option>
+                        <option value="medium">Medium (1-3ft)</option>
+                        <option value="tall">Tall (over 3ft)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="plant-grid">
+                <div class="plant-card" data-bloom="summer" data-sun="full-sun" data-height="medium">
+                    <img src="https://images.unsplash.com/photo-1567689265664-1c48de61fe06" alt="Roses">
+                    <div class="plant-info">
+                        <h3>Roses</h3>
+                        <p>Classic garden favorites that attract bees and butterflies. Choose single-petal varieties for better pollinator access.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> Plant in well-drained soil, water deeply but infrequently, and prune in early spring.</p>
+                            <p><strong>Bloom Time:</strong> Summer to Fall</p>
+                            <p><strong>Height:</strong> 2-6 feet</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-card" data-bloom="spring" data-sun="full-sun" data-height="short">
+                    <img src="https://images.unsplash.com/photo-1530092285049-1c42085fd395" alt="Dandelions">
+                    <div class="plant-info">
+                        <h3>Dandelions</h3>
+                        <p>Early spring bloomers that provide crucial food for bees. Their bright yellow flowers are a favorite of many pollinators.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> No special care needed - they grow naturally! Let them flower before mowing.</p>
+                            <p><strong>Bloom Time:</strong> Spring to Fall</p>
+                            <p><strong>Height:</strong> 6-12 inches</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun to Partial Shade</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-card" data-bloom="summer" data-sun="full-sun" data-height="tall">
+                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651" alt="Sunflowers">
+                    <div class="plant-info">
+                        <h3>Sunflowers</h3>
+                        <p>Large, bright flowers that attract bees, butterflies, and birds. Great for adding height to your garden.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> Plant in full sun, water regularly, and provide support for tall varieties.</p>
+                            <p><strong>Bloom Time:</strong> Summer to Fall</p>
+                            <p><strong>Height:</strong> 3-12 feet</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-card" data-bloom="summer" data-sun="full-sun" data-height="medium">
+                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651" alt="Marigolds">
+                    <div class="plant-info">
+                        <h3>Marigolds</h3>
+                        <p>Easy-to-grow annuals that attract bees and butterflies. Their bright colors make them garden favorites.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> Start from seed or transplants, deadhead regularly, and water when soil is dry.</p>
+                            <p><strong>Bloom Time:</strong> Summer to Fall</p>
+                            <p><strong>Height:</strong> 1-3 feet</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-card" data-bloom="summer" data-sun="full-sun" data-height="medium">
+                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651" alt="Zinnias">
+                    <div class="plant-info">
+                        <h3>Zinnias</h3>
+                        <p>Colorful annuals that bloom all summer long. A favorite of butterflies and hummingbirds.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> Direct sow after last frost, deadhead regularly, and water at the base.</p>
+                            <p><strong>Bloom Time:</strong> Summer to Fall</p>
+                            <p><strong>Height:</strong> 1-3 feet</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-card" data-bloom="summer" data-sun="full-sun" data-height="medium">
+                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651" alt="Cosmos">
+                    <div class="plant-info">
+                        <h3>Cosmos</h3>
+                        <p>Delicate flowers that attract bees and butterflies. Easy to grow from seed and self-sows readily.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> Direct sow in spring, thin seedlings, and water during dry spells.</p>
+                            <p><strong>Bloom Time:</strong> Summer to Fall</p>
+                            <p><strong>Height:</strong> 2-4 feet</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-card" data-bloom="summer" data-sun="full-sun" data-height="medium">
+                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651" alt="Lavender">
+                    <div class="plant-info">
+                        <h3>Lavender</h3>
+                        <p>A fragrant perennial that attracts bees and butterflies with its purple blooms. Drought-resistant and perfect for sunny spots.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> Plant in well-drained soil, prune in spring, and avoid overwatering.</p>
+                            <p><strong>Bloom Time:</strong> Summer</p>
+                            <p><strong>Height:</strong> 1-3 feet</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-card" data-bloom="summer" data-sun="full-sun" data-height="medium">
+                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651" alt="Milkweed">
+                    <div class="plant-info">
+                        <h3>Milkweed</h3>
+                        <p>Essential for monarch butterflies and supports various pollinators. Host plant for monarch caterpillars.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> Plant in full sun, water regularly until established, and leave seed pods for winter interest.</p>
+                            <p><strong>Bloom Time:</strong> Summer</p>
+                            <p><strong>Height:</strong> 2-4 feet</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-card" data-bloom="summer" data-sun="full-sun" data-height="medium">
+                    <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651" alt="Echinacea">
+                    <div class="plant-info">
+                        <h3>Echinacea</h3>
+                        <p>Beautiful coneflowers that attract butterflies and support native bees. Long blooming season.</p>
+                        <div class="plant-details">
+                            <p><strong>Growing Tips:</strong> Plant in well-drained soil, deadhead for continuous bloom, and divide every few years.</p>
+                            <p><strong>Bloom Time:</strong> Summer to Fall</p>
+                            <p><strong>Height:</strong> 2-4 feet</p>
+                            <p><strong>Sun Requirements:</strong> Full Sun</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="benefits">
+            <h2 class="section-title">Why Plant for Pollinators?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-bee"></i>
+                    <h3>Support Biodiversity</h3>
+                    <p>Create habitats that support local pollinator populations and ecosystem health.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Natural Beauty</h3>
+                    <p>Enjoy a vibrant, living garden that changes with the seasons.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Easy Maintenance</h3>
+                    <p>Native pollinator plants are naturally adapted to your local climate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Start Your Pollinator Garden</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell us about your garden space" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Get Started</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="forest-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Forest Haven</h3>
+                <p>Creating sustainable pollinator gardens since 2024</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#plants">Plants</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Forest Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
